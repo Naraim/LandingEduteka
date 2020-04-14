@@ -21,6 +21,10 @@ $textTitle: 34px;
     letter-spacing: 0.05em;
 }
 
+button {
+    border: none;
+}
+
 @import './pages/landing';
 @import './components/button';
 @import './components/projectCard';

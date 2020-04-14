@@ -7,6 +7,10 @@
   letter-spacing: 0.05em;
 }
 
+button {
+  border: none;
+}
+
 .bacon {
   position: absolute;
   width: 70px;
@@ -543,6 +547,199 @@ nav a {
   font-size: 16px;
   font-weight: 300;
   margin: 20px auto;
+}
+
+.classPlan__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 100px 0;
+  padding: 0 150px;
+}
+
+.classPlan__row div {
+  width: 25%;
+  height: 340px;
+  position: relative;
+}
+
+.classPlan__row div img {
+  height: 90px;
+}
+
+.classPlan__row div .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.classPlan__row div .title h2 {
+  color: #EB5276;
+  font-size: 22px;
+  vertical-align: bottom;
+  margin: 0 auto;
+}
+
+.classPlan__row div p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 25px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.classPlan__row div a {
+  position: absolute;
+  width: 80%;
+  display: block;
+  margin: 0 10%;
+  bottom: 0;
+}
+
+.register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.register__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 40px;
+}
+
+.register__content p {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.register__content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.register__content form .btn {
+  width: 220px;
+  margin-top: 60px;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../resources/footer.svg");
+  height: 361px;
+  color: white;
+}
+
+footer .logo {
+  margin-top: 120px;
+}
+
+footer .socialMedia {
+  margin-top: 20px;
+}
+
+footer .extraInfo {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  bottom: 0;
+  font-size: 14px;
+  padding: 20px 50px;
+}
+
+footer .extraInfo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .extraInfo div a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.textInput {
+  padding: 10px 0 10px 80px;
+  height: 48px;
+  border-radius: 24px;
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(237, 237, 237, 0.7);
+  border: none;
+}
+
+.textInput--user {
+  background-image: url("../resources/authorIcon.svg");
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 35px;
+}
+
+.textInput--email {
+  background-image: url("../resources/emailIcon.svg");
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 35px;
+}
+
+.textInput--password {
+  background-image: url("../resources/passwordIcon.svg");
+  background-repeat: no-repeat;
+  background-position-y: 15px;
+  background-position-x: 35px;
+}
+
+.textInput:focus {
+  outline: none;
 }
 
 .btn {
