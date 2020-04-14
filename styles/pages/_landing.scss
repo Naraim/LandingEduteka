@@ -17,6 +17,13 @@
     }
 }
 
+.filledCircle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: $orange;
+    opacity: 0.08;
+}
+
 header {
     position: absolute;
     display: flex;
@@ -55,7 +62,6 @@ header {
             font-size: $textSmall;
             text-decoration: none;
             color: white;
-            letter-spacing: 0.05em;
             margin: 0 10px;
         }
     }
@@ -114,7 +120,7 @@ nav {
         & p {
             font-size: 22px;
             font-weight: 600;
-            color: #FFAA51;
+            color: $orange;
         }
     }
 
@@ -129,7 +135,6 @@ nav {
 }
 
 .body {
-    letter-spacing: 0.05em;
     font-size: $textBody;
     text-align: center;
 }
@@ -207,7 +212,6 @@ nav {
         & p {
             text-align: center;
             font-size: $textBody;
-            letter-spacing: 0.05em;
         }
     }
 }
@@ -216,7 +220,7 @@ nav {
     position: relative;
     display: flex;
     padding-top: 90px;
-    margin-top: 250px;
+    margin-top: 19vw;
 
     & .bacon {
         top: -20px;
@@ -225,8 +229,16 @@ nav {
     }
 
     & .circle {
-        bottom: 10px;
+        bottom: 20px;
         left: 50vw;
+    }
+
+    & .filledCircle {
+        width: 57px;
+        height: 57px;
+        bottom: 0;
+        left: 48.3vw;
+        margin: 0;
     }
 
     & .background {
@@ -237,7 +249,7 @@ nav {
     }
 
     & .books {
-        height: 500px;
+        height: 37vw;
         margin-left: 130px;
     }
 
@@ -250,14 +262,12 @@ nav {
 
         & h2 {
             text-align: right;
-            letter-spacing: 0.05em;
             font-size: $textTitle;
             font-weight: 600;
         }
 
         & p {
             font-size: 18px;
-            letter-spacing: 0.05em;
             text-align: right;
             margin: 20px 0;
             font-weight: 300;
@@ -269,5 +279,107 @@ nav {
             width: 200px;
             padding-top: 6px;
         }
+    }
+}
+
+.projects {
+    position: relative;
+    text-align: center;
+    margin-top: -200px;
+    padding-top: 300px;
+
+    & .background {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 65px; left: 0;
+    }
+
+    & h4 {
+        font-weight: 600;
+        font-size: $textSubtitle;
+        color: $orange;
+        margin-bottom: 30px;
+    }
+
+    & p {
+        width: 55%;
+        text-align: center;
+        margin: 30px auto;
+        font-size: $textBody;
+        font-weight: 300;
+    }
+
+    & .projectCards {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 70px auto;
+    }
+
+    & .btn--blue {
+        padding: 8px 60px;
+    }
+
+    .circle {
+
+        &--xLarge {
+            left: 0;
+            top: 200px;
+        }
+
+        &--big {
+            right: 0;
+            top: 230px;
+        }
+    }
+
+    .filledCircle {
+
+        &--xLarge {
+            width: 415px;
+            height: 415px;
+            left: -100px;
+            top: 290px;
+        }
+
+        &--big {
+            width: 126px;
+            height: 126px;
+            top: 250px;
+            right: 20px;
+        }
+    }
+
+    .bacon {
+        right: 150px;
+        top: 140px;
+        transform: rotate(180deg);
+    }
+}
+
+.categories {
+    position: relative;
+    text-align: center;
+    margin-top: 300px;
+
+    & h4 {
+        font-size: $textSubtitle;
+        font-weight: 600;
+        color: $orange;
+        margin-bottom: 20px;
+    }
+
+    & .title {
+        width: 670px;
+        margin: 0 auto;
+    }
+
+    & p {
+        width: 55%;
+        text-align: center;
+        margin: 30px auto;
+        font-size: $textBody;
+        font-weight: 300;
     }
 }

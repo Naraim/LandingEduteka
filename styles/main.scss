@@ -2,6 +2,10 @@ $yellow: #FFD25E;
 $orange: #FFAA51;
 $green: #B0DC41;
 $red: #EB5276;
+$gradientRed: linear-gradient(90deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
+$gradientRedVertical: inear-gradient(180deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
+$gradientBlue: linear-gradient(90deg, #4BE1E7 0%, #B0DC41 100%), #4BE1E7;
+$gradientBlueVertical: linear-gradient(180deg, #4BE1E7 0%, #B0DC41 100%), #4BE1E7;
 
 $textBody: 16px;
 $textSubtitle: 22px;
@@ -14,7 +18,9 @@ $textTitle: 34px;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 @import './pages/landing';
 @import './components/button';
+@import './components/projectCard';

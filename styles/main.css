@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 0.05em;
 }
 
 .bacon {
@@ -23,6 +24,13 @@
 .circle--small {
   width: 25px !important;
   height: 25px;
+}
+
+.filledCircle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #FFAA51;
+  opacity: 0.08;
 }
 
 header {
@@ -68,7 +76,6 @@ header .pageInfo a {
   font-size: 14px;
   text-decoration: none;
   color: white;
-  letter-spacing: 0.05em;
   margin: 0 10px;
 }
 
@@ -151,7 +158,6 @@ nav a {
 }
 
 .body {
-  letter-spacing: 0.05em;
   font-size: 16px;
   text-align: center;
 }
@@ -245,7 +251,6 @@ nav a {
 .row .function p {
   text-align: center;
   font-size: 16px;
-  letter-spacing: 0.05em;
 }
 
 .aboutUs {
@@ -254,7 +259,7 @@ nav a {
   display: -ms-flexbox;
   display: flex;
   padding-top: 90px;
-  margin-top: 250px;
+  margin-top: 19vw;
 }
 
 .aboutUs .bacon {
@@ -265,8 +270,16 @@ nav a {
 }
 
 .aboutUs .circle {
-  bottom: 10px;
+  bottom: 20px;
   left: 50vw;
+}
+
+.aboutUs .filledCircle {
+  width: 57px;
+  height: 57px;
+  bottom: 0;
+  left: 48.3vw;
+  margin: 0;
 }
 
 .aboutUs .background {
@@ -277,7 +290,7 @@ nav a {
 }
 
 .aboutUs .books {
-  height: 500px;
+  height: 37vw;
   margin-left: 130px;
 }
 
@@ -298,14 +311,12 @@ nav a {
 
 .aboutUs div h2 {
   text-align: right;
-  letter-spacing: 0.05em;
   font-size: 34px;
   font-weight: 600;
 }
 
 .aboutUs div p {
   font-size: 18px;
-  letter-spacing: 0.05em;
   text-align: right;
   margin: 20px 0;
   font-weight: 300;
@@ -318,7 +329,109 @@ nav a {
   padding-top: 6px;
 }
 
+.projects {
+  position: relative;
+  text-align: center;
+  margin-top: -200px;
+  padding-top: 300px;
+}
+
+.projects .background {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 65px;
+  left: 0;
+}
+
+.projects h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #FFAA51;
+  margin-bottom: 30px;
+}
+
+.projects p {
+  width: 55%;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.projects .projectCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+  margin: 70px auto;
+}
+
+.projects .btn--blue {
+  padding: 8px 60px;
+}
+
+.projects .circle--xLarge {
+  left: 0;
+  top: 200px;
+}
+
+.projects .circle--big {
+  right: 0;
+  top: 230px;
+}
+
+.projects .filledCircle--xLarge {
+  width: 415px;
+  height: 415px;
+  left: -100px;
+  top: 290px;
+}
+
+.projects .filledCircle--big {
+  width: 126px;
+  height: 126px;
+  top: 250px;
+  right: 20px;
+}
+
+.projects .bacon {
+  right: 150px;
+  top: 140px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.categories {
+  position: relative;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.categories h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFAA51;
+  margin-bottom: 20px;
+}
+
+.categories .title {
+  width: 670px;
+  margin: 0 auto;
+}
+
+.categories p {
+  width: 55%;
+  text-align: center;
+  margin: 30px auto;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .btn {
+  position: relative;
   padding: 5px 15px;
   border-radius: 30px;
   font-weight: 600;
@@ -333,6 +446,7 @@ nav a {
   width: 15%;
   height: 38px;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .btn--blue {
@@ -343,5 +457,64 @@ nav a {
 .btn--red {
   background: -webkit-gradient(linear, left top, right top, from(#FFAA51), to(#EB5276)), #FFAA51;
   background: linear-gradient(90deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
+}
+
+.btn--white {
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: black;
+  padding: 5px 0;
+  margin: 5px;
+}
+
+.projectCard {
+  width: 360px;
+  color: #333;
+}
+
+.projectCard__img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.projectCard h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.projectCard p {
+  text-align: left;
+  font-size: 14px;
+  margin: 15px 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.projectCard__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectCard__info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projectCard__info div img {
+  margin-right: 10px;
+}
+
+.projectCard__info div p {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

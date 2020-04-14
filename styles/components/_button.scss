@@ -1,4 +1,5 @@
 .btn {
+    position: relative;
     padding: 5px 15px;
     border-radius: 30px;
     font-weight: 600;
@@ -11,12 +12,22 @@
     width: 15%;
     height: 38px;
     padding-top: 8px;
+    cursor: pointer;
 
     &--blue {
-        background: linear-gradient(90deg, #4BE1E7 0%, #B0DC41 100%), #4BE1E7;
+        background: $gradientBlue;
     }
 
     &--red {
-        background: linear-gradient(90deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
+        background: $gradientRed;
+    }
+
+    &--white {
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: black;
+        padding: 5px 0; 
+        margin: 5px;
     }
 }

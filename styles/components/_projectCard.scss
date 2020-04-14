@@ -1,0 +1,42 @@
+.projectCard {
+    width: 360px;
+    color: #333;
+
+    &__img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    & h2 {
+        text-align: center;
+        font-size: $textSubtitle;
+        font-weight: 600;
+    }
+
+    & p {
+        text-align: left;
+        font-size: $textSmall;
+        margin: 15px 0;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        & div {
+            display: flex;
+
+            & img {
+                margin-right: 10px;
+            }
+
+            & p {
+                font-weight: 300;
+                font-size: $textSmall;
+                margin: 0;
+            }
+        }
+    }
+}
