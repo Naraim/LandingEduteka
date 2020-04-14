@@ -1,0 +1,22 @@
+.btn {
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height: fit-content;
+    min-width: 150px;
+    width: 15%;
+    height: 38px;
+    padding-top: 8px;
+
+    &--blue {
+        background: linear-gradient(90deg, #4BE1E7 0%, #B0DC41 100%), #4BE1E7;
+    }
+
+    &--red {
+        background: linear-gradient(90deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
+    }
+}

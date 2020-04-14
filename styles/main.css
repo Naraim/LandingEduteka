@@ -6,6 +6,25 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+.bacon {
+  position: absolute;
+  width: 70px;
+}
+
+.verticalLine {
+  border-left: solid 2px white;
+  height: 16px;
+}
+
+.circle {
+  position: absolute;
+}
+
+.circle--small {
+  width: 25px !important;
+  height: 25px;
+}
+
 header {
   position: absolute;
   display: -webkit-box;
@@ -53,11 +72,6 @@ header .pageInfo a {
   margin: 0 10px;
 }
 
-.verticalLine {
-  border-left: solid 2px white;
-  height: 16px;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +93,7 @@ nav a {
 
 .intro {
   width: 100%;
-  height: 500px;
+  height: 57vw;
 }
 
 .intro img {
@@ -99,6 +113,211 @@ nav a {
   width: 49%;
 }
 
+.intro .circle {
+  top: 51.7vw;
+  left: 60vw;
+}
+
+.summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.summary .title {
+  text-align: center;
+}
+
+.summary .title p {
+  font-size: 22px;
+  font-weight: 600;
+  color: #FFAA51;
+}
+
+.summary .body {
+  width: 70%;
+  margin-top: 25px;
+}
+
+.summary .btn {
+  margin-top: 25px;
+}
+
+.body {
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  text-align: center;
+}
+
+.usesDiagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding-top: 70px;
+  height: 330px;
+}
+
+.usesDiagram .circle {
+  right: 60px;
+  top: 240px;
+}
+
+.usesDiagram .bacon {
+  top: 150px;
+  left: 50px;
+}
+
+.diagram {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  color: white;
+  border: solid 14px white;
+  text-align: center;
+  padding-top: 95px;
+  margin: -25px;
+}
+
+.diagram--yellow {
+  background-color: #FFD25E;
+}
+
+.diagram--orange {
+  top: 60px;
+  background-color: #FFAA51;
+}
+
+.diagram--green {
+  background-color: #B0DC41;
+}
+
+.functions {
+  padding-top: 90px;
+}
+
+.functions h3 {
+  color: #EB5276;
+  font-size: 22px;
+  text-align: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 200px;
+  margin-top: 50px;
+}
+
+.row .function {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 240px;
+}
+
+.row .function img {
+  height: 120px;
+  margin: 15px;
+}
+
+.row .function p {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.aboutUs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 90px;
+  margin-top: 250px;
+}
+
+.aboutUs .bacon {
+  top: -20px;
+  left: 130px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.aboutUs .circle {
+  bottom: 10px;
+  left: 50vw;
+}
+
+.aboutUs .background {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+.aboutUs .books {
+  height: 500px;
+  margin-left: 130px;
+}
+
+.aboutUs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: white;
+  margin: 50px 130px;
+}
+
+.aboutUs div h2 {
+  text-align: right;
+  letter-spacing: 0.05em;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.aboutUs div p {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-align: right;
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.aboutUs div .btn {
+  position: relative;
+  font-size: 20px;
+  width: 200px;
+  padding-top: 6px;
+}
+
 .btn {
   padding: 5px 15px;
   border-radius: 30px;
@@ -112,10 +331,17 @@ nav a {
   height: fit-content;
   min-width: 150px;
   width: 15%;
+  height: 38px;
+  padding-top: 8px;
 }
 
 .btn--blue {
   background: -webkit-gradient(linear, left top, right top, from(#4BE1E7), to(#B0DC41)), #4BE1E7;
   background: linear-gradient(90deg, #4BE1E7 0%, #B0DC41 100%), #4BE1E7;
+}
+
+.btn--red {
+  background: -webkit-gradient(linear, left top, right top, from(#FFAA51), to(#EB5276)), #FFAA51;
+  background: linear-gradient(90deg, #FFAA51 0%, #EB5276 100%), #FFAA51;
 }
 /*# sourceMappingURL=main.css.map */
